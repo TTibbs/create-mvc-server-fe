@@ -37,7 +37,7 @@ const Intro = () => {
         className="flex items-center justify-center gap-5"
       >
         <a
-          href="https://www.npmjs.com/package/quick-ex-db"
+          href="https://www.npmjs.com/package/create-mvc-server"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 ease-linear font-bold py-2 px-4 rounded"
