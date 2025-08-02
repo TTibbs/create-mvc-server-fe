@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { FaNpm, FaGithub } from "react-icons/fa";
-import { IconServer } from "@tabler/icons-react";
+import { FaNpm, FaGithub, FaServer } from "react-icons/fa";
 
 const Intro = () => {
   return (
@@ -14,7 +13,7 @@ const Intro = () => {
         transition={{ duration: 0.8 }}
         className="w-36 h-36 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl"
       >
-        <IconServer className="w-20 h-20 text-white" />
+        <FaServer className="w-20 h-20 text-white" />
       </motion.div>
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
