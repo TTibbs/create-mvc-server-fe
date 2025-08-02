@@ -1,54 +1,69 @@
-# React + TypeScript + Vite
+# create-mvc-server Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern, responsive landing page for the [create-mvc-server](https://www.npmjs.com/package/create-mvc-server) CLI tool. Built with React, TypeScript, and Vite, this website showcases the powerful features of the create-mvc-server package and provides an interactive way for developers to learn about and use the tool.
 
-Currently, two official plugins are available:
+## About create-mvc-server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[create-mvc-server](https://www.npmjs.com/package/create-mvc-server) is a powerful CLI tool that helps you easily scaffold new MVC server projects with an interactive setup. It supports multiple frameworks, databases, and languages to match your project requirements.
 
-## Expanding the ESLint configuration
+### Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Interactive CLI**: User-friendly command line interface that guides you through the setup process
+- **Multiple Database Options**: Choose from PostgreSQL, MongoDB, MySQL, or SQLite
+- **Framework Selection**: Choose between Express or Hono (PostgreSQL only)
+- **Language Options**: Generate projects in JavaScript or TypeScript
+- **Template System**: Pre-configured templates or individual component selection
+- **Package Name Validation**: Automatic validation for npm compatibility
+- **Package Manager Support**: Support for npm and yarn
+- **Directory Conflict Resolution**: Smart handling of existing directories
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Quick Start
+
+```bash
+npx create-mvc-server my-project
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Website Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This landing page includes:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- **Modern UI**: Built with React, TypeScript, and Tailwind CSS
+- **Interactive Components**: Animated sections with Framer Motion
+- **Copy-to-Clipboard**: One-click command copying
+- **Responsive Design**: Works seamlessly on desktop and mobile
+- **Dark Theme**: Beautiful dark theme with gradient accents
+- **Feature Showcase**: Detailed overview of all CLI capabilities
+
+## Technology Stack
+
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **UI Components**: Custom shadcn/ui-inspired components
+
+## Development
+
+To run this website locally:
+
+```bash
+npm install
+npm run dev
 ```
+
+The website will be available at `http://localhost:5173`.
+
+## Deployment
+
+This website is designed to be deployed to platforms like Vercel, Netlify, or any static hosting service. The build process creates optimized static files ready for production deployment.
+
+## Links
+
+- **NPM Package**: [create-mvc-server](https://www.npmjs.com/package/create-mvc-server)
+- **GitHub Repository**: [TTibbs/create-mvc-server](https://github.com/TTibbs/create-mvc-server)
+- **Live Website**: [create-mvc-server.vercel.app](https://create-mvc-server.vercel.app/)
+
+---
+
+This is a minimal frontend designed to showcase the create-mvc-server CLI tool and provide developers with an easy way to learn about and use the package.

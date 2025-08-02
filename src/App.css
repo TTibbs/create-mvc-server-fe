@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+body {
+  scroll-behavior: smooth;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(0.98 0.005 300);

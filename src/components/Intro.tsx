@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaNpm, FaGithub } from "react-icons/fa";
+import { IconServer } from "@tabler/icons-react";
 
 const Intro = () => {
   return (
@@ -7,11 +8,14 @@ const Intro = () => {
       id="intro"
       className="min-h-screen flex flex-col items-center justify-center text-center gap-5"
     >
-      <img
-        src="/icon.png"
-        alt="Credits for the icon: https://www.flaticon.com/authors/phatplus"
-        className="w-36"
-      />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        className="w-36 h-36 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl"
+      >
+        <IconServer className="w-20 h-20 text-white" />
+      </motion.div>
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -26,9 +30,9 @@ const Intro = () => {
         transition={{ duration: 1 }}
         className="text-base md:text-lg text-gray-300 max-w-2xl text-center mb-12"
       >
-        A powerful CLI tool for scaffolding Express.js projects with database
-        integration. Simplify your workflow and get started with a clean,
-        ready-to-go setup in JavaScript or TypeScript.
+        A powerful CLI tool for scaffolding API projects. Simplify your workflow
+        and get started with a clean, ready-to-go setup in JavaScript or
+        TypeScript.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
